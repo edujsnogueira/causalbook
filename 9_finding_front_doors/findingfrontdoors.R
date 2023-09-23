@@ -16,12 +16,12 @@ ggplot(lottery, aes(x = `Years from Winning`, y = `Probability of Bankruptcy`, l
   geom_line(size = 2) + 
   geom_point(size = 4) + 
   scale_shape_manual(values = c(15,16)) +
-  labs(y = 'Prob. of Bankruptcy Relative to Annual Average')+
+  labs(y = 'Prob. of Bankruptcy Relative to Annual Average') +
   geom_vline(aes(xintercept = 0)) +
   theme_pubr() + 
-  theme(text         = element_text(size = 13, family="Garamond"),
-        axis.title.x = element_text(size = 13, family="Garamond"),
-        axis.title.y = element_text(size = 13, family= "Garamond"),
+  theme(text         = element_text(size = 13, family = "Garamond"),
+        axis.title.x = element_text(size = 13, family = "Garamond"),
+        axis.title.y = element_text(size = 13, family = "Garamond"),
         panel.grid.major.y = element_line(size = 1)) + 
   guides(linetype = FALSE, shape = FALSE) + 
   annotate(geom = 'text', x = 2.5, y = .006, hjust = 1, label = 'Large Amount\n($50-$150,000)', family = 'Garamond', size = 13/.pt) +
